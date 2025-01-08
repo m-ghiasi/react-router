@@ -9,13 +9,16 @@ import People from "./pages/People";
 import List from "./pages/List";
 import PeopleDetail from "./pages/PeopleDetail";
 import PeopleCreatePage from "./pages/PeopleCreatePage";
-import PeopleCreateByState from "./pages/PeopleCreateByState"
+import PeopleCreateByState from "./pages/PeopleCreateByState";
+import Register from "./pages/Register"
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
   return (
     <div className="flex ">
       <SideMenue />
+      <Toaster position="top-center"/>
 
       <Routes>
         <Route index element={<HomePage />} />
@@ -50,6 +53,7 @@ function App() {
           <Route index element={<People />} />
           <Route path=":id" element={<PeopleDetail />} />
           <Route path="new" element={<PeopleCreatePage />} />
+          <Route path="register" element={<Register />} />
           <Route path="new-state-form-data" element={<PeopleCreateByState/>} />
 
         </Route>

@@ -13,7 +13,7 @@ export default function PeopleCreateByState() {
     console.log(firstname);
     console.log(lastname);   
     console.log(email);
-    console.log(id);
+    console.log(id); 
   };
 
   const handelFirstname = (e) => {

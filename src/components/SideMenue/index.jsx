@@ -17,6 +17,7 @@ export default function SideMenue(){
             <NavLink to="/people" className={({isActive})=>(isActive? "text-purple-700": "")}>people </NavLink>
             <NavLink to="/people/new" className={({isActive})=>(isActive? "text-orange-900": "")}>Add people simple-hiegh performance </NavLink>
             <NavLink to="/people/new-state-form-data" className={({isActive})=>(isActive? "text-orange-900": "")}>Add people simple-hiegh performance </NavLink>
+            <NavLink to="/people/Register" className={({isActive})=>(isActive? "text-orange-900": "")}>Register</NavLink>
 
           </nav>
         </aside>
