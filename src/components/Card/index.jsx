@@ -14,7 +14,7 @@ export default function Card(props) {
         {props.data.data.first_name}
         {props.data.data.last_name}
       </p>
-      <i> alt={props.data.data.email}</i>
+      <i> {props.data.data.email}</i>
       <p className="mt-4">
         
         {props.data.support.text}

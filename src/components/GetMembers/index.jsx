@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
 export default function GetMembers() {
-  const [member, setMember] = useState([]);
+  const [GetMembers, setMember] = useState([]);
 
   const getData = async () => {
     try {
@@ -31,7 +31,7 @@ export default function GetMembers() {
         </tr>
       </thead>
       <tbody>
-        {members.map((member, index) => (
+        {GetMembers.map((member, index) => (
           <tr key={index}>
             <td>{index+1}</td>
             <td><img className="rounded-full" src= {member.avatar} alt="" /></td>

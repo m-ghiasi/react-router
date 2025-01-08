@@ -6,3 +6,17 @@ table td {
     border :1px solid  red;
     padding: 10px
 }
+
+body {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+input[type="text"]{
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 4px;
+}

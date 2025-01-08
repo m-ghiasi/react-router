@@ -1,13 +1,15 @@
-import { NavLink, Route, Routes } from "react-router";
+import {  Route, Routes } from "react-router";
 import "./App.css";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
-import SideMenue from "./components/SideMenue";
+import SideMenue from "./components/SideMenue"; 
 import Prudacts from "./pages/Prudacts";
 import People from "./pages/People";
 import List from "./pages/List";
 import PeopleDetail from "./pages/PeopleDetail";
+import PeopleCreatePage from "./pages/PeopleCreatePage";
+import PeopleCreateByState from "./pages/PeopleCreateByState"
 
 
 function App() {
@@ -47,6 +49,9 @@ function App() {
         <Route path="/people">
           <Route index element={<People />} />
           <Route path=":id" element={<PeopleDetail />} />
+          <Route path="new" element={<PeopleCreatePage />} />
+          <Route path="new-state-form-data" element={<PeopleCreateByState/>} />
+
         </Route>
       </Routes>
     </div>

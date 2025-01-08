@@ -15,6 +15,9 @@ export default function SideMenue(){
             <NavLink to="/about" className={({isActive})=>(isActive?"text-green-600":"")}>About </NavLink>
             <NavLink to="/prudacts" className={({isActive})=>(isActive ? "text-orange-600":"")}>prudacts</NavLink>
             <NavLink to="/people" className={({isActive})=>(isActive? "text-purple-700": "")}>people </NavLink>
+            <NavLink to="/people/new" className={({isActive})=>(isActive? "text-orange-900": "")}>Add people simple-hiegh performance </NavLink>
+            <NavLink to="/people/new-state-form-data" className={({isActive})=>(isActive? "text-orange-900": "")}>Add people simple-hiegh performance </NavLink>
+
           </nav>
         </aside>
         

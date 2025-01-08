@@ -3,6 +3,7 @@ export default function Button({
   type = "button",
   label,
   className = "",
+ 
 }) {
   return (
     <button
@@ -11,6 +12,7 @@ export default function Button({
       onClick={onClick}
     >
       {label}
+     
       
     </button>
   );
