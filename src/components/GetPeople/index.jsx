@@ -28,7 +28,7 @@ export default function GetPeople() {
     <div className="flex flex-col">
       <ul>
         {loading ? (
-          <TailSpin  height="24" width="24"  />
+          <TailSpin className="flex justify-center items-center" />
         ) : (
           members.map((member, index) => (
             <NavLink key={index} to={`/people/${member.id}`}>
